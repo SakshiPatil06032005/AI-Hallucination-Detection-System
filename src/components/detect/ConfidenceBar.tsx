@@ -1,0 +1,2 @@
+import type { DetectionCategory } from '../../types/analysis';
+export function ConfidenceBar({ confidence, category }: { confidence: number; category: DetectionCategory }) { const value = Math.round(confidence * 100); return <div className="claim-confidence"><div><span>Confidence</span><strong>{value}%</strong></div><div className={`confidence-bar ${category}`}><i style={{ width: `${value}%` }} /></div><small>{value >= 80 ? 'High confidence' : value >= 60 ? 'Medium confidence' : 'Low confidence'}</small></div>; }

@@ -1,0 +1,1 @@
+export function HistoryBulkActions({ count, onDelete }: { count: number; onDelete: () => void }) { if (!count) return null; return <div className="history-bulk-actions"><strong>{count} selected</strong><button className="delete-button" type="button" onClick={onDelete}>Delete Selected</button></div>; }

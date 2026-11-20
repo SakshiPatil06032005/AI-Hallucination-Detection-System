@@ -1,0 +1,1 @@
+export function HistoryError({ onRetry }: { onRetry: () => void }) { return <div className="history-error" role="alert"><span>!</span><h2>Unable to load analysis history</h2><p>Something went wrong while retrieving your previous analyses.</p><button className="secondary-button" type="button" onClick={onRetry}>Try Again</button></div>; }

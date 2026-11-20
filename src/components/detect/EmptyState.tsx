@@ -1,0 +1,1 @@
+export function EmptyState() { return <div className="detect-empty-state"><span className="empty-shield">+</span><h2>Ready to verify AI-generated content</h2><p>Paste an AI response above and start your first analysis.</p></div>; }
